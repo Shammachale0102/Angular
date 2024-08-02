@@ -1,0 +1,23 @@
+<h1>This is my user defined first component</h1>
+
+<hr>
+
+<table border="2" align='center' cellpadding="3" width="300px">
+    <tr>
+        <th>Emp Name</th>
+        <th>Salary</th>
+        <th>Country</th>
+        <th>Deptno</th>
+        <th>Role</th>
+    </tr>
+    <tr *ngfor="let e Employees">
+        <td>{{e.ename}}</td>
+        <td>{{e.sal}}</td>
+        <td>{{e.country}}</td>
+        <td>{{e.deptno}}</td>
+        <td>{{e.role}}</td>
+    </tr>
+
+</table>
+
+

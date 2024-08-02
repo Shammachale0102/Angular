@@ -1,0 +1,64 @@
+<!--30/07/2024-->
+<!--<div class="container">
+    <h3 [innerHTML]="txt" class="text-primary"></h3>
+    
+    <input type="text" [value]="msg">  
+    <img [src]="imgPath" height="200px"  width="200px">
+
+    <br>
+    <hr>-->
+<!--Two way data binding-->
+<!--  Enter Your Name:-<input type="text" [(ngModel)]="greeting">
+  
+   <p>Welcome , {{greeting}}</p>
+<hr>
+<h3>Calculator using ngModel</h3>
+<input type="number" [(ngModel)]="num1">
+<input type="number" [(ngModel)]="num2">
+<h3>Addition :-{{num1+num2}}</h3>
+<h3>Subtraction :-{{num1-num2}}</h3>
+<h3>Multiplication:-{{num1*num2}} </h3>
+<h3>Division:-{{num1/num2}} </h3>
+
+<hr>-->
+<!--Event Binding-->
+<!--<button (mouseover)="sayHello()" (mouseout)="notHello()">click me</button>
+<p>Welcome , {{name}}</p>
+   </div>-->
+
+<!--31/07/2024-->
+
+<div calss="container">
+    <input type="text" #txt><br><br>
+
+    <button class="btn btn-outline-success btn-lg m-3" (click)="fun1(txt.value)">click Me</button>
+    <P>value of textbox:- {{globalVal}}</P>
+</div>
+
+<hr>
+
+<!--<div calss="container">
+   <input type="number" #num1><br><br>
+   <input type="number" #><br><br>
+
+   <button class="btn-outline-success btn-lg m-3" (click)="fun1(txt.value)">Show Addition</button>
+   <p>Show Addition:- {{globalVal}}</P></p>
+
+</div>-->
+
+
+<input type="text" (keyup)="keyEvent($event)">
+<p>Text :- {{msg}}</p>
+<hr>
+
+
+<!--pipes-->
+
+
+
+
+
+
+
+
+
