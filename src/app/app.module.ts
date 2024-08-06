@@ -16,6 +16,10 @@ import { StudentRegistrationComponent } from './student-registration/student-reg
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RoutingCompComponent } from './routing-comp/routing-comp.component';
+import { ServiceCompComponent } from './service-comp/service-comp.component';
+import { ACompComponent } from './acomp/acomp.component';
+import { BCompComponent } from './bcomp/bcomp.component';
+import { CCompComponent } from './ccomp/ccomp.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { RoutingCompComponent } from './routing-comp/routing-comp.component';
     StudentRegistrationComponent,
     AboutComponent,
     ContactComponent,
-    RoutingCompComponent
+    RoutingCompComponent,
+    ServiceCompComponent,
+    ACompComponent,
+    BCompComponent,
+    CCompComponent
   ],
   imports: [
     BrowserModule,

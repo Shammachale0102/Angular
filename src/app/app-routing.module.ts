@@ -5,9 +5,18 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ACompComponent } from './acomp/acomp.component';
+import { BCompComponent } from './bcomp/bcomp.component';
 
 const routes: Routes = [
   {
+    path:'a',component:ACompComponent
+  },
+  {
+    path:'b',component:BCompComponent
+  },
+];
+  /*{
     path: 'student', component: StudentComponent
   },
   {
@@ -23,7 +32,8 @@ const routes: Routes = [
     path: 'about', component: AboutComponent
   },
  
-];
+*/
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
