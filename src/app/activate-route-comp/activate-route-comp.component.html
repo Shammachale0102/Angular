@@ -1,0 +1,26 @@
+<div class="container text-center">
+    <h1 class="text-info">Products Data</h1> <!-- Fixed the typo -->
+
+    <div class='table-responsive'>
+        <table class='table'>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>View</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of productInfo">
+                    <td>{{ i.pid }}</td>
+                    <td>{{ i.pname }}</td>
+                    <td>{{ i.price }}</td>
+                    <td>
+                        <a [routerLink]="['/detail', i.pid]">Show</a> <!-- Link to detailed view -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -20,6 +20,8 @@ import { ServiceCompComponent } from './service-comp/service-comp.component';
 import { ACompComponent } from './acomp/acomp.component';
 import { BCompComponent } from './bcomp/bcomp.component';
 import { CCompComponent } from './ccomp/ccomp.component';
+import { ActivateRouteCompComponent } from './activate-route-comp/activate-route-comp.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { CCompComponent } from './ccomp/ccomp.component';
     ServiceCompComponent,
     ACompComponent,
     BCompComponent,
-    CCompComponent
+    CCompComponent,
+    ActivateRouteCompComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

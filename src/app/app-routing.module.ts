@@ -7,14 +7,23 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ACompComponent } from './acomp/acomp.component';
 import { BCompComponent } from './bcomp/bcomp.component';
+import { ActivateRouteCompComponent } from './activate-route-comp/activate-route-comp.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   {
+    path:'act',component:ActivateRouteCompComponent
+  },
+  {
+    path:'detail/:id',component:ProductDetailComponent
+  }
+  /*{
     path:'a',component:ACompComponent
   },
   {
     path:'b',component:BCompComponent
   },
+*/
 ];
   /*{
     path: 'student', component: StudentComponent
