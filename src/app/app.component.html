@@ -1,58 +1,6 @@
-<h1 class="text-center text-primary"><a>Get  All Product's Data</a></h1>
-<!--<app-routing-comp></app-routing-comp>-->
-<!--<app-service-comp></app-service-comp>-->.
-<router-outlet></router-outlet>
 
-
-
-<!--<h1 class="text-danger">App Component</h1>
-<h1 class="text-success">App Component</h1>
-<h1 class="text-warning">App Component</h1>
-<h1 class="text-info bg-warning">App Component</h1>
-
-<hr>
-<div class="container">
-  <h1>Ngstyle Example</h1>
-
-  <p [ngStyle]="{'background-color':'red','font-size':'20px'}">This is para one</p>
+<div class="container m-4">
+  <button class="btn btn-primary" (click)="loadComp()">Get News Api Data</button>
+  
+  <router-outlet></router-outlet>
 </div>
-<hr>
-
-<ul *ngFor="let i of Employees">
-  <li [ngStyle]="{'color': i.role === 'Admin' ? 'pink' : 'green'}">
-    {{ i.ename }} {{ i.country }} {{ i.role }}
-  </li>
-</ul>
-
-
-
-<ul *ngFor="let person of Employees">
-  <li *ngIf="person.sal" [ngStyle]="{
-    'font-size.px': 24,
-    'text-align': 'center',
-    'color': 'green'
-  }">
-    {{ person.ename }} {{ person.sal }}
-  </li>
-</ul>
-
-<hr>
-<h2>NgClass Example</h2>
-<ul *ngFor="let person of Employees">
-  <li [ngClass]="{
-    'text-success': person.country === 'us' || person.country === 'uk' || person.country === 'india'
-  }">
-    {{ person.ename }} ({{ person.country }})
-  </li>
-</ul>
-
-
-
-
-<hr>
-<h2>ngSwitch Example</h2>
-<ul *ngFor="let person of Employees" [ngSwitch]="person.country">
-  <li *ngSwitchCase="'us'" class="text-success">{{person.ename}} ({{person.country}})</li>
-  <li *ngSwitchCase="'uk'" class="text-success">{{person.ename}} ({{person.country}})</li>
-  <li *ngSwitchCase="'india'" class="text-success">{{person.ename}} ({{person.country}})</li>
-</ul>-->

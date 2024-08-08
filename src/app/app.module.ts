@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstCompComponent } from './first-comp/first-comp.component';
 import { SecondCompComponent } from './second-comp/second-comp.component';
 import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule } from '@angular/forms';
 import { PipecompComponent } from './pipecomp/pipecomp.component';
 import { PowerPipe } from './power.pipe';
 import { GenPipe } from './gen.pipe';
@@ -22,6 +23,7 @@ import { BCompComponent } from './bcomp/bcomp.component';
 import { CCompComponent } from './ccomp/ccomp.component';
 import { ActivateRouteCompComponent } from './activate-route-comp/activate-route-comp.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { NewsCompComponent } from './news-comp/news-comp.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +45,14 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     BCompComponent,
     CCompComponent,
     ActivateRouteCompComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    NewsCompComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
