@@ -9,7 +9,7 @@ export class NewsServiceService {
 
   constructor(private http:HttpClient) { }
 
-  apiUrl = "https://newsapi.org/v2/everything?q=tesla&from=2024-07-13&sortBy=publishedAt&apiKey=c1d857779fd5489ab705cd1fd8bd33f4"
+  //apiUrl = "https://newsapi.org/v2/everything?q=tesla&from=2024-07-13&sortBy=publishedAt&apiKey=c1d857779fd5489ab705cd1fd8bd33f4"
 
   apiUrl1 = "https://jsonplaceholder.typicode.com/posts"
 
