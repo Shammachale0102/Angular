@@ -1,1 +1,8 @@
-<p>news-comp works!</p>
+<div class="container" *ngFor="let i of info">
+    <p style="text-align: center;">{{i.author}}</p>
+    <img [src]="i.urlToImage" width="400px" height="200px" class="mx-auto d-block" alt="Image related to the content">
+    <p class="text-center">{{i.publishedAt}}</p>
+    <p>{{i.description}}</p>
+</div>
+
+
